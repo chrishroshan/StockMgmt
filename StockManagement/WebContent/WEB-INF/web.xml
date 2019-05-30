@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>StockManagement</display-name>
+	<welcome-file-list>
+		<welcome-file>jsp/Login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.Register</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.Authorize</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Stock</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.Stock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Stock</servlet-name>
+		<url-pattern>/Stock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateScreen</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.CreateScreen</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateScreen</servlet-name>
+		<url-pattern>/CreateScreen</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateStocks</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.UpdateAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStocks</servlet-name>
+		<url-pattern>/UpdateStocks</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewScreen</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.View</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewScreen</servlet-name>
+		<url-pattern>/ViewScreen</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteStock</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.DeleteStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteStock</servlet-name>
+		<url-pattern>/DeleteStock</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteAction</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.DeleteAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAction</servlet-name>
+		<url-pattern>/DeleteAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateAction</servlet-name>
+		<url-pattern>/UpdateAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateAction</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.UpdateAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>StockManagement</servlet-name>
+		<servlet-class>com.jpa.stockmanagement.StockManagement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StockManagement</servlet-name>
+		<url-pattern>/StockManagement</url-pattern>
+	</servlet-mapping>
+
+</web-app>
